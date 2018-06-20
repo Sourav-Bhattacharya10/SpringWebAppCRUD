@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Welcome Page</title> 
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+
+        <!-- Bootstrap 4 CSS -->
+        <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="text-center">Welcome to the Vegetable Online Shopping</h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md"></div>
+                <div class="col-md">
+                    <div class="row">
+                        <div class="col-md text-center">VegId</div>
+                        <div class="col-md text-center">VegName</div>
+                        <div class="col-md text-center">VegCost</div>
+                    </div>
+                    <div class="row" th:each="veg : ${vegList}">
+                            <div class="col-md text-center" th:text="${veg.VegId}"></div>
+                            <div class="col-md text-center" th:text="${veg.VegName}"></div>
+                            <div class="col-md text-center" th:text="${veg.VegCost}"></div>
+                    </div>
+                </div>
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </body>
+</html>
