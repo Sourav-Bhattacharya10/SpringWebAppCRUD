@@ -1,7 +1,6 @@
 package com.vegshop.demovegshop;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.List;
 
@@ -31,4 +30,16 @@ public class DemoApplicationTests
 		assertNotNull(vegList);
 		assertTrue(!vegList.isEmpty());
 	}
+
+	// @Test
+	// public void insertVeg()
+	// {
+	// 	Vegetable sentVeg = new Vegetable();
+	// 	sentVeg.VegName = "Capsicum";
+	// 	sentVeg.VegCost = 50;
+	// 	int addVegStatus = vegRepository.insertItem(sentVeg);
+		
+	// 	assertEquals(addVegStatus,1);
+	// 	//assertTrue(!vegList.isEmpty());
+	// }
 }

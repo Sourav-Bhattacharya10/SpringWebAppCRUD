@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Welcome Page</title> 
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+
+        <!-- Bootstrap 4 CSS -->
+        <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="text-center">Welcome to the Vegetable Online Shopping</h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md">
+                    <form method="POST">
+                        <div class="form-group row">
+                            <label for="vegname" class="col-sm-2 col-form-label">VegName</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="vegname" id="vegname" placeholder="Enter VegName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="vegcost" class="col-sm-2 col-form-label">VegCost</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="vegcost" id="vegcost" placeholder="Enter VegCost">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <br>
+            <div class="row">
+                <div class="col-md">
+                    VegName<div th:text="${vegName}"></div>
+                    VegCost<div th:text="${vegCost}"></div>
+                    VegStatus<div th:text="${addVegStatus}"></div>
+                </div>
+            </div> -->
+            <br>
+            <div class="row">
+                <div class="col-md">
+                    <center><a href="/welcome" class="btn btn-primary">View All Veg</a></center>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

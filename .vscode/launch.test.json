@@ -1,0 +1,28 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "demovegshop",
+                "projectName": "demovegshop",
+                "workingDirectory": "c:\\Users\\Sourav Bhattacharya\\Documents\\VIsual Studio Code\\Gradle Projects\\VegShopTest",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "demovegshop",
+                "projectName": "demovegshop",
+                "workingDirectory": "c:\\Users\\Sourav Bhattacharya\\Documents\\VIsual Studio Code\\Gradle Projects\\VegShopTest",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

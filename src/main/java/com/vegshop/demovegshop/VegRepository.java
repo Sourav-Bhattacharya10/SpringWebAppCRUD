@@ -17,4 +17,11 @@ public class VegRepository
     {
         return jdbcTemplate.query("SELECT * FROM Vegetable", new VegRowMapper());
     }
+
+    @Transactional(readOnly = false)
+    public int insertItem(Vegetable veg)
+    {
+        int status = jdbcTemplate.update("INSERT INTO Vegetable VALUES (?,?)", veg.VegName, veg.VegCost);
+        return status;
+    }
 }
